@@ -23,11 +23,10 @@ E4ST is built on top of [MATPOWER](https://matpower.org/), a MATLAB® package fo
 ### E4ST Installation
 E4ST can be installed by either of the following methods:
 * Clone the repository using a command such as:
-    * `git clone reponame`
-    <!-- TODO: add repo name once it exists -->
+    * `git clone git@github.com:e4st-dev/e4st-mp.git`
 * Download the repository as a zip file
 
-## Running Test Cases
+### Running Test Cases
 * Make sure that MATPOWER has been added to your MATLAB path
 * Add `E4ST/lib/core/0_sim/` to your MATLAB path
 * Choose one of the following test cases to run:
