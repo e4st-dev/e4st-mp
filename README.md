@@ -26,9 +26,25 @@ E4ST can be installed by either of the following methods:
     * `git clone git@github.com:e4st-dev/e4st-mp.git`
 * Download the repository as a zip file
 
-### Running Test Cases
-* Make sure that MATPOWER has been added to your MATLAB path
-* Add `E4ST/lib/core/0_sim/` to your MATLAB path
+### Testing E4ST
+To test that your install of E4ST is working correctly, there is a small suite of tests that can be run with the following procedure:
+* Make sure that MATPOWER has been added to your MATLAB path via `addpath(genpath(<path_to_matpower>))`
+* Add the E4ST lib directory recursively to your MATLAB path via `addpath(genpath('lib'));`
+* Run `test_e4st`
+    * This should run without error and print something similar to the following:
+        ```
+        t_apply_changes....ok
+        t_e4st_solve.......ok
+        t_e4st_caplim......ok
+        t_e4st_storage.....ok
+        t_e4st_dac.........ok
+        All tests successful (1249 of 1249)
+        Elapsed time 6.62 seconds.
+        ```
+
+### Running Sample Cases
+* Make sure that MATPOWER has been added to your MATLAB path via `addpath(genpath(<path_to_matpower>))`
+* Add the E4ST lib directory recursively to your MATLAB path via `addpath(genpath('lib'));`
 * Choose one of the following test cases to run:
     * `test_ces_input.mat`
     * `test_co2cap_input.mat`
