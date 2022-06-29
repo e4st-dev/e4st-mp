@@ -16,9 +16,9 @@ E4ST is built on top of [MATPOWER](https://matpower.org/), a MATLAB® package fo
 ## Getting Started
 
 ### System Requirements
-* MATLAB® version R2013b or later
-* MATPOWER 5.1 or later
-* Optional: installed high performance solver such as Gurobi, CPLEX, MOSEK, or GLPK
+* MATLAB® version R2016b or later
+* MATPOWER 7.0 or later
+* Optional: Commercial solver Gurobi v9.1.2 or later
 
 ### E4ST Installation
 E4ST can be installed by either of the following methods:
@@ -55,6 +55,9 @@ To test that your install of E4ST is working correctly, there is a small suite o
     * ```load(fullfile(e4st_root, 'Input', 'test_ces_input.mat'));```
 * Run E4ST with the `runE4ST` command:
     * ```result = runE4ST(mpc, esc, result, opt);```
+
+## Contact Information
+Before using E4ST for any major analysis, please contact Ethan Russell at `erussell@rff.org` for additional information on the model, inputs, and outputs.
 
 <!-- TODO: Add Inputs section to describe esc, mpc, opt, and result -->
 
