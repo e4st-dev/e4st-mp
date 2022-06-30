@@ -1,0 +1,11 @@
+Output/
+*.aux
+*.brf
+*.lof
+*.log
+*.lot
+*.out
+*.synctex.gz
+*.synctex.gz(busy)
+*.toc
+*.asv
