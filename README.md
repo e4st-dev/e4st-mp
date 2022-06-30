@@ -16,7 +16,7 @@ E4ST is built on top of [MATPOWER](https://matpower.org/), a MATLAB® package fo
 
 E4ST has been developed by researchers at Resources for the Future, Cornell University, Arizona State University, and Rensselaer Polytechnic Institute, with support from the U.S. Department of Energy's CERTS program, the Power Systems Engineering Research Center (PSERC), the Sloan Foundation, Breakthrough Energy, the New York Independent System Operator, and other funders of Resources for the Future.
 
-(E4ST.com) is an older website with additional information about E4ST, that complements the information available at this site.
+[E4ST.com](https://e4st.com/) is an older website with additional information about E4ST, that complements the information available at this site.
 
 
 ## E4ST Model Formulation
