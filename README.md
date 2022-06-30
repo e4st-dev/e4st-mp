@@ -1,5 +1,8 @@
-E4ST
-===============
+# E4ST
+
+![GitHub contributors](https://img.shields.io/github/contributors/e4st-dev/e4st-mp?logo=GitHub)
+![GitHub last commit](https://img.shields.io/github/last-commit/e4st-dev/e4st-mp/main?logo=GitHub)
+[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 
 ## Overview
 <!-- From Manual -->
