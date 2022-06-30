@@ -6,15 +6,18 @@
 
 ## Overview
 <!-- From Manual -->
-The Engineering, Economic, and Environmental Electricity Simulation Tool, or E4ST (pronounced "east"), was developed by faculty and research staff at Cornell, Rensselaer Polytechnic Institute, Arizona State University and at Resources for the Future, with support from the U.S. Department of Energy's CERTS program as well as the Power Systems Engineering Research Center (PSERC). The code itself was developed primarily by Biao Mao, Carlos Murillo-Sanchez and Ray Zimmerman with contributions by others, but the E4ST project as a whole was a much larger enterprise with major contributions and efforts by a larger group.
+The Engineering, Economic, and Environmental Electricity Simulation Tool (E4ST, pronounced “east”) is policy analysis and planning software built to simulate in detail how the power sector will operate and evolve in response to environmental and non-environmental policies and regulations, renewable and non-renewable generation investments, transmission investments, demand changes, and so on. The user specifies the policies, investments, and other inputs of each simulation. E4ST predicts operation, generator investment and retirement, prices, consumer welfare, producer profits, emissions, and health effects of emissions, among other outcomes, in each simulated year. It is therefore well suited for comprehensive benefit-cost analysis. 
 
-E4ST is built on top of [MATPOWER](https://matpower.org/), a MATLAB® package for solving power flow and optimal power flow problems.  It consists of a set of software toolboxes that can be used to estimate present and future operating and investment states of an electric power system, including:
-* generator dispatches
-* generator entry and retirement
-* locational prices
-* fixed and fuel costs
-* air emissions
-* environmental damages
+As implemented by its developers at Resources for the Future, E4ST has exceptionally high spatial and engineering detail relative to other US national policy analysis models, using a detailed model of the US power grid with over 5,000 nodes (substations). Within E4ST, power flows on the grid are represented in an unusually realistic manner through linear approximations of the non-linear equations that determine actual transmission line flows. E4ST is also a power system planning model. As a planning model, its distinguishing strengths include endogenous prediction of generator construction and retirement, and the aforementioned comprehensive benefit-cost analysis capabilities.
+
+At the heart of E4ST is an optimization problem that represents the behavior of the system operators, electricity end-users, generators, and generation developers. It is a cost minimization problem that minimizes the sum of generator variable costs, generator fixed costs, end-user consumer surplus losses, and investment costs. This problem simultaneously mimics the decisions of system operators and the investment and retirement decisions of generation owners. 
+
+E4ST is built on top of [MATPOWER](https://matpower.org/), a MATLAB® package for solving power flow and optimal power flow problems.
+
+E4ST has been developed by researchers at Resources for the Future, Cornell University, Arizona State University, and Rensselaer Polytechnic Institute, with support from the U.S. Department of Energy's CERTS program, the Power Systems Engineering Research Center (PSERC), the Sloan Foundation, Breakthrough Energy, the New York Independent System Operator, and other funders of Resources for the Future.
+
+(E4ST.com) is an older website with additional information about E4ST, that complements the information available at this site.
+
 
 ## E4ST Model Formulation
 Find the E4ST Model formulation in [`docs/E4ST_Formulation.pdf`](https://github.com/e4st-dev/e4st-mp/blob/main/docs/E4ST_Formulation.pdf)
@@ -51,7 +54,7 @@ To test that your install of E4ST is working correctly, there is a small suite o
 ### Running Sample Cases
 * Make sure that MATPOWER has been added to your MATLAB path via `addpath(genpath(<path_to_matpower>))`
 * Add the E4ST lib directory recursively to your MATLAB path via `addpath(genpath('lib'));`
-* Choose one of the following test cases to run:
+* Choose one of the following test cases to run. Each test case contains the inputs for a 30-bus power system, with varying power sector policies and generator details:
     * `test_ces_input.mat`
     * `test_co2cap_input.mat`
     * `test_co2ecap_input.mat`
