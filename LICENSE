@@ -1,6 +1,23 @@
-BSD 3-Clause License
+The code in E4ST is distributed under the 3-clause BSD license below.
 
-Copyright (c) 2022, E4ST Development
+While not required by the terms of the license, we do request that
+publications derived from the use of E4ST explicitly acknowledge
+that fact by citing:
+
+  Daniel L. Shawhan, John T. Taber, Di Shi, Ray D. Zimmerman, Jubo Yan,
+  Charles M. Marquet, Yingying Qi, Biao Mao, Richard E. Schuler,
+  William D. Schulze, and Daniel J. Tylavsky, "Does a Detailed Model of
+  the Electricity Grid Matter? Estimating the Impacts of the Regional
+  Greenhouse Gas Initiative," Resource and Energy Economics,
+  Volume 36 Issue 1, January 2014, pp. 191–207.
+  http://dx.doi.org/10.1016/j.reseneeco.2013.11.015.
+
+The following is the official license notice:
+
+-------------------------------------------------------------------------
+
+Copyright (c) 2000-2022, Power System Engineering Research Center (PSERC)
+and individual contributors (see AUTHORS file for details).
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
