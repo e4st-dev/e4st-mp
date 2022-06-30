@@ -16,6 +16,9 @@ E4ST is built on top of [MATPOWER](https://matpower.org/), a MATLAB® package fo
 * air emissions
 * environmental damages
 
+## E4ST Model Formulation
+Find the E4ST Model formulation in [`docs/E4ST_Formulation.pdf`](https://github.com/e4st-dev/e4st-mp/blob/main/docs/E4ST_Formulation.pdf)
+
 ## Getting Started
 
 ### System Requirements
@@ -56,8 +59,8 @@ To test that your install of E4ST is working correctly, there is a small suite o
     <!-- TODO: add description of each of these input files -->
 * Load the test case, which contains four variables - `esc`, `mpc`, `opt`, and `result`.  Load the test case with the following line of code:
     * ```load(fullfile(e4st_root, 'Input', 'test_ces_input.mat'));```
-* Run E4ST with the `runE4ST` command:
-    * ```result = runE4ST(mpc, esc, result, opt);```
+* Run E4ST with the `RunE4ST` command:
+    * ```result = RunE4ST(mpc, esc, result, opt);```
 
 ## Contact Information
 Before using E4ST for any major analysis, please contact Ethan Russell at `erussell@rff.org` for additional information on the model, inputs, and outputs.
