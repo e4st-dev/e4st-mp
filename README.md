@@ -37,7 +37,7 @@ E4ST can be installed by either of the following methods:
 
 ### Testing E4ST
 To test that your install of E4ST is working correctly, there is a small suite of tests that can be run with the following procedure:
-* Make sure that MATPOWER has been added to your MATLAB path via `addpath(genpath(<path_to_matpower>))`
+* Make sure that MATPOWER has been added to your MATLAB path via `run('<path to MATPOWER>/install_matpower.m')`
 * Add the E4ST lib directory recursively to your MATLAB path via `addpath(genpath('lib'));`
 * Run `test_e4st`
     * This should run without error and print something similar to the following:
@@ -52,7 +52,7 @@ To test that your install of E4ST is working correctly, there is a small suite o
         ```
 
 ### Running Sample Cases
-* Make sure that MATPOWER has been added to your MATLAB path via `addpath(genpath(<path_to_matpower>))`
+* Make sure that MATPOWER has been added to your MATLAB path via `run('<path to MATPOWER>/install_matpower.m')`
 * Add the E4ST lib directory recursively to your MATLAB path via `addpath(genpath('lib'));`
 * Choose one of the following test cases to run. Each test case contains the inputs for a 30-bus power system, with varying power sector policies and generator details:
     * `test_ces_input.mat`
